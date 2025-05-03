@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
+  display: block;
   min-height: 100vh;
 }
 
@@ -60,6 +59,7 @@ nav a {
 
 .hero .flores img {
   height: 150px;
+  widht: auto;
   max-widht: 100%;
 }
 
@@ -188,12 +188,12 @@ footer {
   }
 
   .categorias h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .categoria a {
-    font-size: 1em;
-    padding: 10px 20px;
+    font-size: 0.9em;
+    padding: 8px 15px;
   }
 
   .contacto form input,
