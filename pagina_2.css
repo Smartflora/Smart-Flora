@@ -1,0 +1,218 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #5c3c28; /* Marrón de fondo */
+  color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo div {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  min-width: 200px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* Sección de Productos */
+.categorias {
+  text-align: center;
+  margin-top: 80px; /* Aumenté el margen superior para separarlo mejor */
+}
+
+.categoria {
+  display: inline-block;
+  margin: 20px;
+}
+
+.categoria a {
+  display: block;
+  padding: 15px;
+  background-color: #16a085;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.categoria a:hover {
+  background-color: #1abc9c;
+}
+
+/* Tabla de productos */
+.tabla-productos {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #e8e8e8;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody img {
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #808080; /* Gris */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #666666; /* Gris más oscuro al pasar el mouse */
+}
+
+/* Estilos de cada categoría de producto */
+.categoria h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #16a085;
+  text-transform: uppercase;
+  margin-top: 40px; /* Aumento del margen superior para separar más del contenido anterior */
+}
+
+.categoria p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .social-icons img {
+  height: 25px;
+}
+
+footer .social-icons span {
+  font-weight: bold;
+}
+
+/* Estilo para las imágenes de productos en móviles */
+@media (max-width: 768px) {
+  tbody img {
+    width: 40px;
+  }
+
+  button {
+    padding: 6px 12px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+
+  .tabla-productos {
+    padding: 20px;
+  }
+
+  .social-icons img {
+    height: 20px;
+  }
+}

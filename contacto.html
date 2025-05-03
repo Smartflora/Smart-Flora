@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Smart Flora</title>
+  <link rel="stylesheet" href="contacto.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logotipo.png" alt="Smart Flora logo" />
+      <div><strong>SMART<br />FLORA</strong></div>
+    </div>
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="#productos">PRODUCTOS</a>
+      <a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contáctanos</h1>
+  </section>
+
+  <section class="contacto">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactoForm" action="https://formspree.io/f/myzwznal" method="POST">
+      <div class="campo">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required />
+</div> 
+
+<div class="campo">
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required />
+</div>
+
+<div class="campo">
+  <label for="comentarios">Comentarios:</label>
+  <textarea id="comentarios" name="comentarios" required></textarea>
+</div>
+
+  <button type="submit">Enviar</button>
+</form>
+
+    <h3>Información de contacto:</h3>
+    <p><strong>Correo electrónico:</strong> contacto@smartflora.com</p>
+    <p><strong>Teléfono:</strong> +123 456 7890</p>
+    <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad Verde</p>
+  </section>
+<footer>
+   <div>
+        <a href="terminos.html" target="_blank">POLÍTICA DE PRIVACIDAD - TÉRMINOS Y CONDICIONES </a>
+      </div>
+       <div class="social-icons">
+       <img src="instagram.png"> </img><a href="https://www.instagram.com/smartflora.mx?igsh=MW81dzhoN3hldzJwcw==">Instagram</a>
+       <img src="facebook.png"> </img><a href="https://www.facebook.com/share/15upfdDEHw/">Facebook</a>
+      <img src="X.png"> </img><a href="https://x.com/SmartfloraMx?t=ZWkqjO9sL5-efADTJbt4IA&s=09">X</a>
+    <span>@SMARTFLORAWEB</span>
+  </div>
+</footer>
+  
+    <script>
+    // Limpiar los datos del formulario cuando se recarga la página
+    window.onload = function() {
+      // Borra los datos del formulario
+      document.getElementById('contactoForm').reset();
+    }
+  </script>
+</body>
+</html>

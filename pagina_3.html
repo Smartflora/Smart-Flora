@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Flora - Productos</title>
+  <link rel="stylesheet" href="pagina_3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logotipo.png" alt="Smart Flora logo" />
+      <div><strong>SMART<br />FLORA</strong></div>
+    </div>
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="index.html">PRODUCTOS</a>
+      <a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="paso" id="paso1">
+      <h2>MEDIOS DE PAGO</h2>
+      <p>TARJETA DE CRÉDITO O DÉBITO</p>
+      <img src="tarjeta2.png" alt="Tarjeta">
+      <button onclick="mostrarPaso(2)">CONTINUAR</button>
+    </div>
+
+    <div class="paso" id="paso2">
+      <h2>DATOS DE LA TARJETA</h2>
+      <input type="text" id="clabe" placeholder="CLABE">
+      <input type="text" id="nombre" placeholder="NOMBRE">
+      <div class="flex-inputs">
+        <input type="text" id="ccv" placeholder="CCV">
+        <input type="text" id="fecha" placeholder="MM/AA">
+      </div>
+      <button onclick="validarYContinuar()">CONTINUAR</button>
+    </div>
+
+    <div class="paso" id="paso3">
+      <h2>PAGO REALIZADO EXITOSO</h2>
+
+      <div class="dato">
+        <span class="etiqueta">🌱 PRODUCTO:</span>
+        <span id="producto">Flor Luminosa Solar</span>
+      </div>
+
+      <div class="dato">
+        <span class="etiqueta">👤 NOMBRE DEL COMPRADOR:</span>
+        <span id="comprador">ss</span>
+      </div>
+
+      <div class="dato">
+        <span class="etiqueta">💰 PRECIO:</span>
+        <span id="precio">$12.99</span>
+      </div>
+
+      <div id="imagen-producto"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <a href="terminos.html" target="_blank">POLÍTICA DE PRIVACIDAD - TÉRMINOS Y CONDICIONES </a>
+    </div>
+    <div class="social-icons">
+      <img src="instagram.png"> </img><a href="https://www.instagram.com/smartflora.mx?igsh=MW81dzhoN3hldzJwcw==">Instagram</a>
+      <img src="facebook.png"> </img><a href="https://www.facebook.com/share/15upfdDEHw/">Facebook</a>
+      <img src="X.png"> </img><a href="https://x.com/SmartfloraMx?t=ZWkqjO9sL5-efADTJbt4IA&s=09">X</a>
+      <span>@SMARTFLORAWEB</span>
+    </div>
+  </footer>
+
+<script>
+  function mostrarPaso(n) {
+    document.querySelectorAll('.paso').forEach(p => p.style.display = 'none');
+    document.getElementById('paso' + n).style.display = 'block';
+  }
+
+  function validarYContinuar() {
+    const clabe = document.getElementById('clabe').value;
+    const nombre = document.getElementById('nombre').value;
+    const ccv = document.getElementById('ccv').value;
+    const fecha = document.getElementById('fecha').value;
+
+    if (clabe && nombre && ccv && fecha) {
+      document.getElementById('comprador').textContent = nombre;
+
+      const producto = localStorage.getItem('producto');
+      const precio = localStorage.getItem('precio');
+      const imagen = localStorage.getItem('imagen');
+
+      if (producto && precio && imagen) {
+        document.getElementById('producto').textContent = producto;
+        document.getElementById('precio').textContent = precio;
+
+        const contenedorImagen = document.getElementById('imagen-producto');
+        contenedorImagen.innerHTML = ''; // Para evitar múltiples imágenes
+
+        const img = document.createElement('img');
+        img.src = imagen.trim();
+        img.alt = producto;
+        img.style.maxWidth = "200px";
+        img.style.marginTop = "20px";
+        contenedorImagen.appendChild(img);
+
+        mostrarPaso(3);
+      } else {
+        alert('No se encontraron datos del producto. Vuelve a la página anterior.');
+      }
+    } else {
+      alert('Por favor, completa todos los campos.');
+    }
+  }
+
+  // Mostrar primer paso al cargar
+  window.onload = () => {
+    mostrarPaso(1);
+  };
+</script>
+
+  </body>
+  </html>

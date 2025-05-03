@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Flora - Productos</title>
+  <link rel="stylesheet" href="pagina_2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logotipo.png" alt="Smart Flora logo" />
+      <div><strong>SMART<br />FLORA</strong></div>
+    </div>
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="index.html">PRODUCTOS</a>
+      <a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tabla-productos">
+      <h2>Plantas Luminosas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th>Imagen</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Producto 1 -->
+         <tr>
+  <td>Flor Solar LED</td>
+  <td>$300</td>
+  <td>Se ilumina automáticamente con energía solar. Ideal para exteriores.</td>
+  <td><img src="luminosas1.png" alt="Flor Solar LED" width="60"></td>
+  <td><button onclick="guardarProducto('Flor Solar LED', '$12.99', 'luminosas1.png')">COMPRAR</button></td>
+</tr>
+<!-- Producto 2 -->
+<tr>
+  <td>Maceta Brillante</td>
+  <td>$500</td>
+  <td>Incorpora luces LED que cambian de color por la noche.</td>
+  <td><img src="luminosas2.png" alt="Maceta Brillante" width="60"></td>
+  <td><button onclick="guardarProducto('Maceta Brillante', '$15.50', 'luminosas2.png')">COMPRAR</button></td>
+</tr>
+<!-- Producto 3 -->
+<tr>
+  <td>Orquídea Luminosa</td>
+  <td>$1,000</td>
+  <td>Ilumina ambientes con elegancia. Perfecta para decoración interior.</td>
+  <td><img src="luminosas3.png" alt="Orquídea Luminosa" width="60"></td>
+  <td><button onclick="guardarProducto('Orquídea Luminosa', '$18.75', 'luminosas3.png')">COMPRAR</button></td>
+</tr>
+<!-- Producto 4 -->
+<tr>
+  <td>Rosa Lumínica</td>
+  <td>$150</td>
+  <td>Una rosa que brilla con luces LED suaves, perfecta para regalar.</td>
+  <td><img src="luminosas4.png" alt="Rosa Lumínica" width="60"></td>
+  <td><button onclick="guardarProducto('Rosa Lumínica', '$14.99', 'luminosas4.png')">COMPRAR</button></td>
+</tr>
+<!-- Producto 5 -->
+<tr>
+  <td>Lirio Luminoso</td>
+  <td>$700</td>
+  <td>Una planta elegante que ilumina suavemente cualquier espacio.</td>
+  <td><img src="luminosas5.png" alt="Lirio Luminoso" width="60"></td>
+  <td><button onclick="guardarProducto('Lirio Luminoso', '$17.00', 'luminosas5.png')">COMPRAR</button></td>
+</tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <section class="tabla-productos">
+      <h2>Plantas Decorativas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th>Imagen</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Producto 1 -->
+          <tr>
+            <td>Bambú zen</td>
+            <td>$250</td>
+            <td>Perfecto para crear un ambiente relajante. Estilo minimalista y narutal.</td>
+            <td><img src="decorativas1.png" alt="Bambú zen" width="60"></td>
+            <td><button onclick="guardarProducto('Bambú zen', '$22.99', 'decorativas1.png')">COMPRAR</button></td>
+          </tr>
+          <!-- Producto 2 -->
+          <tr>
+            <td>Cactus moderno</td>
+            <td>$300</td>
+            <td>Ideal para espacios pequeños y moderno. Requiere poco mantenimiento.</td>
+            <td><img src="decorativas2.png" alt="Cactus moderno" width="60"></td>
+            <td><button onclick="guardarProducto('Cactus moderno', '$18.00', 'decorativas2.png')">COMPRAR</button></td>
+          </tr>
+          <!-- Producto 3 -->
+          <tr>
+            <td>Helecho Exótico</td>
+            <td>$580</td>
+            <td>Hojas vibrantes que decoran con frescura y movimineto cualquier rincón.</td>
+            <td><img src="decorativas3.png" alt="Helecho Exótico" width="60"></td>
+            <td><button onclick="guardarProducto('Helecho Exótico', '$10.50', 'decorativas3.png')">COMPRAR</button></td>
+          </tr>
+
+            <tr>
+            <td>Maceta Terracota</td>
+            <td>$350</td>
+            <td>Una plnata elegante y clásica, ideal para interiores con estilo rústico.</td>
+            <td><img src="decorativas4.png" alt="Maceta Terracota" width="60"></td>
+            <td><button onclick="guardarProducto('Maceta Terracota', '$18.00', 'decorativas4.png')">COMPRAR</button></td>
+          </tr>
+
+                <tr>
+            <td>Plantas colgantes</td>
+            <td>$350</td>
+            <td>Perfectas para agregar un toque de frescura y estilo en espacios verticales.</td>
+            <td><img src="decorativas5.png" alt="Plantas colgantes" width="60"></td>
+            <td><button onclick="guardarProducto('Plantas colgantes', '$18.00', 'decorativas5.png')">COMPRAR</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="tabla-productos">
+      <h2>Plantas Purificadoras</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th>Imagen</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Producto 1 -->
+          <tr>
+            <td>Sansevieria</td>
+            <td>$180</td>
+            <td>También conocida como lengua de suegra, elimina toxinas del aire y es muy resistente.</td>
+            <td><img src="purificadoras1.png" alt="Sansevieria" width="60"></td>
+            <td><button onclick="guardarProducto('Sansevieria', '$14.99', 'purificadoras1.png')">COMPRAR</button></td>
+          </tr>
+          <!-- Producto 2 -->
+          <tr>
+            <td>Photos</td>
+            <td>$100</td>
+            <td>Ideal para interiores, limpia el aire y se adapta a diferentes condiciones de luz.</td>
+            <td><img src="purificadoras2.png" alt="Photos" width="60"></td>
+            <td><button onclick="guardarProducto('Photos', '$20.50', 'purificadoras2.png')">COMPRAR</button></td>
+          </tr>
+          <!-- Producto 3 -->
+          <tr>
+            <td>Planta Bambú</td>
+            <td>$200</td>
+            <td>Planta elegante que filtra contaminantes del aire, recomendada para personas con alergias.<td><img src="purificadoras3.jpg" alt="Planta Bambú" width="60"></td>
+            <td><button onclick="guardarProducto('Planta Bambú', '$12.99', 'purificadoras3.jpg')">COMPRAR</button></td>
+          </tr>
+
+               <tr>
+            <td>Espatifilo</td>
+            <td>$120</td>
+            <td> Conocida como la paz lily, purifica el aire y es ideal para espacios interiores.</td>
+            <td><img src="purificadoras4.png" alt="Espatifilo" width="60"></td>
+            <td><button onclick="guardarProducto('Espatifilo', '$20.50', 'purificadoras4.png')">COMPRAR</button></td>
+          </tr>
+
+               <tr>
+            <td>Dracaena</td>
+            <td>$230</td>
+            <td>Planta que elimina toxinas como el benceno y el formaldehído del aire.</td>
+            <td><img src="purificadoras5.png" alt="Dracaena" width="60"></td>
+            <td><button onclick="guardarProducto('Dracaena', '$20.50', 'purificadoras5.png')">COMPRAR</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+<footer>
+   <div>
+        <a href="terminos.html" target="_blank">POLÍTICA DE PRIVACIDAD - TÉRMINOS Y CONDICIONES </a>
+      </div>
+       <div class="social-icons">
+       <img src="instagram.png"> </img><a href="https://www.instagram.com/smartflora.mx?igsh=MW81dzhoN3hldzJwcw==">Instagram</a>
+       <img src="facebook.png"> </img><a href="https://www.facebook.com/share/15upfdDEHw/">Facebook</a>
+      <img src="X.png"> </img><a href="https://x.com/SmartfloraMx?t=ZWkqjO9sL5-efADTJbt4IA&s=09">X</a>
+    <span>@SMARTFLORAWEB</span>
+  </div>
+</footer>
+
+
+  <script>
+    function guardarProducto(nombre, precio, imagen) {
+      // Guardar el nombre y precio del producto en localStorage
+      localStorage.setItem('producto', nombre);
+      localStorage.setItem('precio', precio);
+      localStorage.setItem('imagen', imagen);
+      // Redirigir a la página 3
+      window.location.href = "pagina_3.html";
+    }
+  </script>
+</body>
+</html>

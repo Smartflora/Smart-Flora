@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #f2f2f2;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sobre-nosotros {
+  background:  #C8AD7F;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.sobre-nosotros h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.sobre-nosotros h2 {
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.sobre-nosotros ul {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.sobre-nosotros li {
+  margin: 10px 0;
+}
+
+.sobre-nosotros h3 {
+  font-size: 1.8em;
+  margin-top: 40px;
+}
+
+.sobre-nosotros p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 30px 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 20px;
+  margin-left: 10px;
+}

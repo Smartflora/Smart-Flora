@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #f2f2f2;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  background: #8b5e3c;
+  text-align: center;
+  padding: 150px 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.contacto {
+  background-color: #fff6e0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.contacto label {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 80%;
+  padding-top: 10px;
+}
+
+.contacto input, .contacto textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contacto button {
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.contacto button:hover {
+  background-color: #6f4f1f;
+}
+
+.contacto h3 {
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+.contacto p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 30px 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 20px;
+  margin-left: 10px;
+}

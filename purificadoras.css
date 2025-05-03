@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #f2f2f2;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  background: #8b5e3c;
+  text-align: center;
+  padding: 60px 20px 80px;
+  color: white;
+  flex-grow: 1;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.hero .galeria {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.hero .producto {
+  text-align: center;
+  max-width: 250px;
+}
+
+.hero .producto img {
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.hero .producto p {
+  font-size: 15px;
+  color: white;
+}
+
+.hero button {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* BOTÓN DE VER MÁS INFORMACIÓN */
+.ver-mas {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ver-mas a {
+  display: inline-block;
+  background-color: white;
+  color: #8b5e3c;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.ver-mas a:hover {
+  background-color: #d2b48c;
+  color: white;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 30px 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 20px;
+  margin-left: 10px;
+}
